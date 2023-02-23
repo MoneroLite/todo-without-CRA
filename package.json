@@ -8,9 +8,9 @@
     "lint:scss": "stylelint **/*.scss",
     "lint:scss:fix": "stylelint **/*.scss --fix",
 
-    "lint:ts": "eslint **/*.{js,jsx,ts,tsx,json}",
-    "lint:ts:fix": "eslint --fix '/**/*.{ts,tsx,json}'",
-    "format": "prettier --write '/**/*.{ts,tsx,css,md,json}' --config ./.prettierrc"
+    "lint:ts": "eslint **/*.{js,jsx,ts,tsx}",
+    "lint:ts:fix": "eslint --fix /**/*.{ts,tsx}",
+    "format": "prettier --write /**/*.{ts,tsx,css,md,json} --config ./.prettierrc"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
