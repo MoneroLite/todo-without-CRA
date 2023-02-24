@@ -24,8 +24,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
 		use: {
 			loader: 'babel-loader',
 			options: {
-				presets: ['@babel/preset-env'],
-				plugins: []
+				presets: ['@babel/preset-env']
 			}
 		}
 	}
