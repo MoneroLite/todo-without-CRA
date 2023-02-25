@@ -1,7 +1,7 @@
+import { withProviders } from './providers'
 import React from 'react'
+import { Routing } from 'pages'
 
-const App = () => {
-  return <div>App</div>
-}
+const App = () => <Routing />
 
-export default App
+export default withProviders(App)
