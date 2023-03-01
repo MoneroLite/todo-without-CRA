@@ -9,6 +9,7 @@
     "allowJs": true,
     "moduleResolution": "node",
     "baseUrl": "./src/",
+    "skipLibCheck": true, // Не проверять типы, заданные во всех файлах описания типов (*.d.ts)?
 
     // esModuleInterop позволяет работать с пакетами, которые используют
     // common js как с обычными пакета с помощью import (require() module.export) = common js
@@ -32,9 +33,15 @@
   "include": [
     //   "./config/jest/setupTests.ts",
     "./src/**/*.ts",
-    "./src/**/*.tsx"
+    "./src/**/*.tsx",
+    "index.d.ts"
   ],
   "paths": {
     "*": ["./src/*"]
-  }
+  },
+  "plugins": [
+    {
+      "name": "typescript-plugin-css-modules"
+    }
+  ]
 }
