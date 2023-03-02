@@ -2,15 +2,14 @@
 import { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
-const TestPaget = lazy(() => import('./testTwo'))
-const TestPage = lazy(() => import('./test'))
+const TasksList = lazy(() => import('./TasksListPage'))
+const NotFound = lazy(() => import('./NotFoundPage'))
 
 export const Routing = () => {
   return (
     <Routes>
-      <Route path='/' element={<TestPage />} />
-      <Route path='/test' element={<TestPaget />} />
-      {/* <Route path="*" element={<NotFound/>}/> */}
+      <Route path='/' element={<TasksList />} />
+      <Route path='*' element={<NotFound />} />
     </Routes>
   )
 }
