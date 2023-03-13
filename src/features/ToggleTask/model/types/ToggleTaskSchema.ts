@@ -1,1 +1,4 @@
-export let ToggleTaskSchema
+export interface ToggleTaskProps {
+  taskId: number
+  withStatus?: boolean
+}
