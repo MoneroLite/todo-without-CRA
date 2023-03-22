@@ -1,15 +1,14 @@
 // Либо использовать @loadable/component, в рамках туториала - некритично
 import { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
-
-const TaskPage = lazy(() => import('./TaskPage'))
-const NotFound = lazy(() => import('./NotFoundPage'))
+import { NotFoundPage } from './NotFoundPage/index'
+import { TaskPage } from './TaskPage/index'
 
 export const Routing = () => {
   return (
     <Routes>
       <Route path='/' element={<TaskPage />} />
-      <Route path='*' element={<NotFound />} />
+      <Route path='*' element={<NotFoundPage />} />
     </Routes>
   )
 }
