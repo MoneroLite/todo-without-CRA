@@ -1,8 +1,13 @@
+import { TaskCard } from 'entities'
 import React from 'react'
 import styles from './taskPage.module.scss'
 
 const TaskPage = () => {
-  return <div>TaskPage</div>
+  return (
+    <div>
+      <TaskCard />
+    </div>
+  )
 }
 
 export default TaskPage

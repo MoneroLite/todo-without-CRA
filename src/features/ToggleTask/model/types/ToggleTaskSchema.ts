@@ -1,4 +1,4 @@
 export interface ToggleTaskProps {
-  taskId: number
+  taskId?: number
   withStatus?: boolean
 }
